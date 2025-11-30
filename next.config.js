@@ -5,9 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // If your repo name is not 'username.github.io', uncomment and set basePath:
-  // basePath: '/Website_Portfolio',
-  // assetPrefix: '/Website_Portfolio',
+  basePath: '/Website_Portfolio',
+  assetPrefix: '/Website_Portfolio',
 }
 
 module.exports = nextConfig
