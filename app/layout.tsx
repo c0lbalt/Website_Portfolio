@@ -1,15 +1,11 @@
-import type { Metadata } from 'next'
+'use client'
+
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import { SFXProvider } from '@/components/SFXProvider'
 
 const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'Portfolio - Cole',
-  description: 'Chemist and Developer',
-}
 
 export default function RootLayout({
   children,
@@ -18,6 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <title>Portfolio - Cole</title>
+        <meta name="description" content="Chemist and Developer" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider>
           <SFXProvider>

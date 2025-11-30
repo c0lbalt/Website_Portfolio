@@ -106,3 +106,13 @@ button {
   animation: wave-delayed 15s ease-in-out infinite;
 }
 
+/* Ensure Hero content is visible in static export before JS loads */
+.hero-container,
+.hero-title,
+.hero-subtitle,
+.hero-buttons,
+.hero-star {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
